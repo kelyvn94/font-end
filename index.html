@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic</title>
+    <style>
+       .container{
+        position: relative;
+        background-color: blue;
+        width: 150px;
+       }
+       .a{
+        position: absolute;
+        right: 0;
+        top: 0;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="input">
+        <div class="a">a</div>
+    </div>
+   <script>
+    const input = document.querySelector('.input');
+    const di = document.querySelector('.a');
+
+    di.style.display = "none";
+
+    const display = () => {
+        input.addEventListener("keyup", (e) => {
+            if(e.target.value.length> 0){
+                di.style.display = "block";
+            }else{
+                di.style.display = "none";
+            }
+        })
+    }
+    display();
+   </script>
+</body>
+</html>
