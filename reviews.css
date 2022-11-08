@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/backgrd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #483a3a;
+  background-blend-mode: multiply;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  -webkit-text-decoration: underline green;
+          text-decoration: underline green;
+}
+
+#person-img {
+  border-radius: 70px;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+}
+
+.btn {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=reviews.css.map */
